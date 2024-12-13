@@ -33,7 +33,7 @@ const PredictionForm = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://34.163.227.45:8000/predict", {
+      const response = await fetch("https://api-model-project-back-437329565469.europe-west9.run.app/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
