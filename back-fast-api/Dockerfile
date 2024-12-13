@@ -5,7 +5,8 @@ FROM python:3.10
 WORKDIR /app
 
 # Copier le fichier requirements.txt
-COPY .. .
+COPY requirements.txt .
+COPY decision_tree.pkl .
 
 # Installer les dépendances
 RUN pip install --no-cache-dir -r requirements.txt
