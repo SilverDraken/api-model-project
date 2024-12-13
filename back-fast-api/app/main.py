@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 
-model_path = "back-fast-api/decision_tree.pkl"
+model_path = os.path.join(os.getcwd(), "decision_tree.pkl")
 
 
 try:
